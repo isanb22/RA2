@@ -24,7 +24,7 @@ public class MainArvore {
 		long tempoInicio = System.currentTimeMillis();
 		
         for (int i = 0; i < tam; i++) {
-            int num = 1 + gerador.nextInt(tam*2);
+            int num = 1 + gerador.nextInt(tam * 2);
             System.out.print("Numero Gerado: " + num + "   ");
             binaria.adicionar(num);
         } LineBreak();
@@ -34,7 +34,7 @@ public class MainArvore {
         System.out.println("Arvore gerada em: " + (tempoFinal - tempoInicio) + " milissegundos");
         
         System.out.println("Arvore gerada!");
-       // binaria.print_EmOrdem(binaria.getRaiz());
+        //binaria.print_EmOrdem(binaria.getRaiz());
         
         // Escolher:
         while (escolha != 0)
@@ -87,7 +87,7 @@ public class MainArvore {
         		}
         		
         		tempoFinal = System.nanoTime();
-                System.out.println("Tempo decorrido" + (tempoFinal - tempoInicio)+ "nanossegundos ("+((tempoFinal - tempoInicio)/1000) +" milissegundos)");
+                System.out.println("Tempo decorrido " + (tempoFinal - tempoInicio) + " nanossegundos (" + ((tempoFinal - tempoInicio)/1000) + " milissegundos)");
         		
         	}
         	
@@ -95,11 +95,14 @@ public class MainArvore {
         	else if (escolha == 4)
         	{
                 System.out.print("Digite o valor que gostaria de deletar: ");
-                tempoInicio = System.nanoTime();
                 info = scanner.nextInt();
+                
+                tempoInicio = System.nanoTime();
+                
                 binaria.remover(info);
+                
                 tempoFinal = System.nanoTime();
-                System.out.println("Tempo decorrido" + (tempoFinal - tempoInicio)+ "nanossegundos ("+((tempoFinal - tempoInicio)/1000) +" milissegundos)");
+                System.out.println("Tempo decorrido " + (tempoFinal - tempoInicio) + " nanossegundos (" + ((tempoFinal - tempoInicio)/1000) + " milissegundos)");
         	}
         	
         	LineBreak();
@@ -119,7 +122,7 @@ public class MainArvore {
 			System.out.println("= Trabalho feito por:                 =");
 			System.out.println("= - Isabela Navarro Benedetti         =");
 			System.out.println("= - Lucas Galves Simoes               =");
-			System.out.println("= - João Vitor Zambão			      =");
+			System.out.println("= - João Vitor Zambão                 =");
 			System.out.println("=-------------------------------------=");
 			LineBreak();
 			System.out.println(" Qual seria o tamanho da arvore? ");
